@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Air harp"
+date:   2017-12-23
+categories: projects
+front-image: slug.png
+images: /images/news/slug.png
+intro: "The air harp, a thing you shake around"
+---
+
+The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project.  

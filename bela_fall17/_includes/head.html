@@ -1,0 +1,29 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+
+    <!-- FONT AWESOME ICONS
+    These can be called by putting this in the HTML:
+    <i class="far fa-gear"></i> That calls the gear icon from the Font Awesome Regular library. -->
+    <link rel="stylesheet" href="{{ "/css/font-awesome/fontawesome-pro-brands.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome/fontawesome-pro-core.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome/fontawesome-pro-light.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome/fontawesome-pro-regular.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/font-awesome/fontawesome-pro-solid.css" | prepend: site.baseurl }}">
+
+    <!-- WEB FONTS
+    Imported are Inconsolata (for code), Poppins (at all weights and italic weights), and Space Mono for titles.
+    These imports are in line with the Bela Sample Pattern Library: https://belaplatform.github.io/bela_sample/#fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Space+Mono:400,700" rel="stylesheet">
+    <!-- JAVASCRIPTS -->
+    <script src="{{ "/js/global.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/js/jquery-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{ "/js/jquery.appear.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    
+</head>

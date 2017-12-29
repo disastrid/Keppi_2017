@@ -1,0 +1,12 @@
+- site: Twitter
+  icon: fa-twitter
+  handle: belaPlatform
+- site: Facebook
+  icon: fa-facebook
+  handle: belaPlatform
+- site: YouTube
+  icon: fa-youtube
+  handle: belaPlatform
+- site: Github
+  icon: fa-github
+  handle: belaPlatform

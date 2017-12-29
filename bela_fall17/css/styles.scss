@@ -1,0 +1,25 @@
+---
+# This will be processed as styles.css in the final site.
+---
+
+@charset "UTF-8";
+
+// Then, import all the partials. Use the path partials/components/fileNameWithNoLeadingUnderscore, like this:
+// @import "partials/components/something";
+// NOTE: 
+// The order matters! This is because CSS is cascading, meaning that styles imported later addressing the same selector
+// will overwrite previous rules.
+
+
+@import "base"; // imports _base.scss from _sass/_base.scss. Colours, fonts, etc etc.
+
+// Everything else is a component:
+@import "components/grid";
+@import "components/ui-assets";
+@import "components/typography"; // Styles for headers, text bits, etc.
+@import "components/nav-section";
+@import "components/feature-section";
+@import "components/news-section";
+@import "components/projects-section";
+@import "components/footer-section";
+@import "components/layout";

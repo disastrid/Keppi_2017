@@ -1,0 +1,9 @@
+.project {
+	border: 1px solid pink;
+	height: 100%;
+}
+
+.project-title {
+	@include title-text;
+	font-size: 1em;
+}

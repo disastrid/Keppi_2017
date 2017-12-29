@@ -1,0 +1,33 @@
+<div class='row'>
+	<div class="spacing-4"></div>
+	<h1 class="feature-text">Latest Bela news</h1>
+	<div class="spacing-2"></div>
+
+  
+	<!-- small-12 medium-6  -->
+      
+    {% for post in site.categories.news %}
+      {% if forloop.index > 1 %}
+        {% break %}
+      {% endif %}
+        
+		<div class='col-6 news-image'>
+        
+			{% for image in post.images %}
+				{% unless forloop.first %}
+				{% break %}
+			{% endunless %}
+            <img alt="" src="{{site.url}}/images/news/{{post.front-image}}" />
+			{% endfor %}
+		</div>
+		<div class='col-6 news-item'>
+            <!-- <p class='date'>{{post.date | date: "%B %d, %Y" }}</p> -->
+            <h3 class="news-title"><a href='{{ post.url }}'>{{post.title}}</a></h3>
+            <p>{{post.excerpt}}</p>
+            <a href='{{post.url}}'><button>Read more ...</button></a>
+        
+        </div>
+
+    {% endfor %}
+    <div class="spacing-4"></div>
+</div>

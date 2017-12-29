@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "One more"
+date:   2017-12-23
+categories: projects
+front-image: slug.png
+images: /images/news/slug.png
+intro: "One more bit just because"
+---
+
+The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. 

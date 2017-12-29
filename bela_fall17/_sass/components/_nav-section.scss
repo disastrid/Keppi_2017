@@ -1,0 +1,52 @@
+// Styles for the top nav bar.
+
+
+
+.topnav {
+    background-color: $black;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    // height: 3.375em;
+}
+
+/* Style the links inside the navigation bar */
+.nav-item {
+    float: right;
+    margin: 0;
+    // position: absolute;
+    // right: 0;
+    > li {
+        float: left;
+        display: block;
+        @include title-text;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1em;
+        > a {
+            padding: 0.8em 1em;
+            color: $white;
+            &:hover {
+                @include title-text-bold;
+                color: purple;
+                background-color: pink;
+            }
+            &.active {
+                background-color: orange;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+/* Change the color of links on hover */
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}

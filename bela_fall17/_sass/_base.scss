@@ -1,0 +1,135 @@
+// This is the settings file for the site.
+// Table Of Contents:
+// 1. Colours
+// 2. Fonts
+// 3. Layout conventions
+// 4. Mixins
+
+// ============================================================
+// COLOURS
+// ============================================================
+
+// The colours here are taken from the Bela pattern library. 
+// Setting the colours first in this doc means that they can be called by name from now on.
+// DON'T SPECIFY COLOURS WITHIN THE CSS LATER - this means that bugs are hard to track down.
+// If you want to use a new colour, add it to this list and reference it using the variable name.
+
+$white: 		#fff;
+$black: 		#000;
+
+$yellow:		#ffff00;
+
+// BELA COLOR SCHEME
+$teal-base:		#009587;
+$teal-main:		#00bea4;
+$teal-01:		#1ce8b5;
+$teal-02:		#63ffd9;
+$teal-03:		#a6ffea;
+
+$accent-red:	#ff5e5b; // Accent red
+$accent-yellow:	#fff07c; // Accent yellow
+
+// GREY
+$grey-light-00:	#fdfdfd; // lightest light grey
+$grey-light-01:	#f5f5f5;
+$grey-light-02:	#e4e4e4;
+$grey-light-03:	#d5d5d5;
+$grey-light-04:	#a8a9a7;
+$grey-dark-00:	#b7b7b7; // lightest dark grey
+$grey-dark-01:	#969696;
+$grey-dark-02:	#656565;
+$grey-dark-03:	#353535;
+$grey-dark-04:	#000807;
+
+
+// ============================================================
+// MIXINS
+// ============================================================
+
+// For stuff that is super tedious to write. Declare like this, with @mixin:
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//      -moz-border-radius: $radius;
+//       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
+
+// Use like this, with @include:
+// .class-name { @include border-radius(1em);}
+
+// This resolves to:
+// .class-name {
+//		-webkit-border-radius: 1em;
+//		-moz-border-radius: 1em;
+//		-ms-border-radius: 1em;
+//		border-radius: 1em;
+// }
+
+@mixin body-text {
+	font-family: $body-text;
+	color: $black;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+@mixin normal-body-text {
+	@include body-text;
+	font-weight: 300;
+}
+
+@mixin bold-body-text {
+	@include body-text;
+	font-weight: 700;
+}
+
+@mixin title-text {
+	font-family: $title-text;
+	font-weight: 400;
+}
+
+@mixin title-text-bold {
+	font-family: $title-text;
+	font-weight: 700;
+}
+// ============================================================
+// FONTS & TYPOGRAPHY
+// ============================================================
+
+$body-text:			'Poppins', sans-serif;
+$title-text:		'Space Mono', monospace;
+$code-text:			'Inconsolata', sans-serif;
+
+// i {
+// 	color: white;
+// 	font-size: 3em;
+// }
+
+p {
+	@include normal-body-text;
+}
+
+// ============================================================
+// LAYOUT CONVENTIONS
+// ============================================================
+
+body {
+	background: $white;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+// Some spacers, for content layout. Heights resolve to em measurements.
+.spacing {
+	height: 1.25em;
+	&.two {
+		height: 2.5em;
+	}
+	&.three {
+		height: 3.75em;
+	}
+	&.four {
+		height: 5em;
+	}
+}
+

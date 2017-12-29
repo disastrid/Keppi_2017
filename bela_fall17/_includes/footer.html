@@ -1,0 +1,57 @@
+<div class="row footer">
+	<div class="col-3">
+		<p class="column-title">About Bela</p>
+		<ul class="footer-ul">
+			{% for item in site.data.about %}
+			<li><i class="fa fa-angle-right ul-icon"></i><a href="{{item.url | prepend: site.url}}">{{item.text}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="col-3">
+		<p class="column-title">Resources</p>
+		<ul class="footer-ul">
+			{% for item in site.data.resources %}
+			<li><i class="fa fa-angle-right ul-icon"></i><a href="{{item.url | prepend: site.url}}">{{item.text}}</a></li>
+			{% endfor %}
+
+		</ul>
+
+	</div>
+
+
+
+	<div class="col-3">
+		<p class="column-title">Latest news</p>
+		<ul>
+			{% for item in site.category.news %}
+				{% if forloop.index > 4 %}
+				{% break %}
+				{% endif %}
+			<li><i class="fa fa-angle-right ul-icon"></i>{{item.title}}</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="col-3">
+		<p class="column-title">Follow us online</p>
+		<ul class="social-list">
+			<!-- <li class="social-button"><i class="fab fa-fw fa-twitter"></i></li> -->
+			{% for item in site.data.social %}
+			<li class="social-button"><a href="https://www.{{item.site}}.com/{{item.handle}}"><i class="fab fa-fw {{item.icon}}"></i></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+
+
+</div><!-- end first footer row -->
+
+
+
+	<div class="row footer">
+		<div class="col-3"><img src="{{site.url}}/images/logo_white.png" class="footer-logo"></div>
+		<div class="col-9"><!-- newsletter signup --></div>
+	</div>
+
+	<div class="spacing-2 footer"></div>
+</div>

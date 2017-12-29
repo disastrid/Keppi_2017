@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Last one"
+date:   2017-12-23
+categories: projects
+front-image: slug.png
+images: /images/news/slug.png
+intro: "This is the last one I swear"
+---
+
+The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. The air harp is a project. 
